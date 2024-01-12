@@ -51,8 +51,12 @@ public class Register extends HttpServlet{
 				RequestDispatcher req = request.getRequestDispatcher("welcome.jsp");
 				req.forward(request, response);
 				
+				int m=stmt.executeUpdate(); 
+				RequestDispatcher requ = request.getRequestDispatcher("login.jsp");
+				req.forward(request, response);
+				
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			 

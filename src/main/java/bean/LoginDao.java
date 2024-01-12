@@ -14,19 +14,19 @@ con=ConnectionProvider.getCon();
 PreparedStatement ps=con.prepareStatement(  
     "select * from employee where emp_name=? and password=?");  
   
-ps.setString(1,bean.getUserName());  
+ps.setString(1,bean.getUsername());  
 ps.setString(2, bean.getPassword());  
 System.out.println("Inside LoginDao.validate method with ps : "+ps);
 ResultSet rs=ps.executeQuery();  
-System.out.println("Inside LoginDao.validate method with ResultSet : "+rs);
+System.out.println("Inside Admino.validate method with ResultSet : "+rs);
 status=rs.next();  
               
-}catch(Exception e){}  
+}catch(Exception e) {}
 finally {
 	try {
 		con.close();
 	} catch (SQLException e) {
-		// TODO Auto-generated catch block
+		
 		e.printStackTrace();
 	}
 }

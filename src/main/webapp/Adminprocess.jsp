@@ -1,9 +1,9 @@
-<%@page import="bean.LoginDao"%>  
-<jsp:useBean id="obj" class="bean.LoginBean"/> 
+<%@page import="bean.AdminDao"%>  
+<jsp:useBean id="obj" class="bean.AdminBean"/> 
 <jsp:setProperty property="*" name="obj"/>  
   
 <%  
-boolean status=LoginDao.validate(obj);  
+boolean status=AdminDao.validate(obj);  
 if(status){  
 out.println("Your successfully logged in");  
 session.setAttribute("session","TRUE"); 
