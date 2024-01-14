@@ -2,6 +2,18 @@ package bean;
 
 public class ProductBean {
 
+	public ProductBean() {
+		super();
+	}
+	public ProductBean(Integer productId, String productName, String productDescription, String productPrice,
+			String productCategory) {
+		super();
+		this.productId = productId;
+		this.productName = productName;
+		this.productDescription = productDescription;
+		this.productPrice = productPrice;
+		this.productCategory = productCategory;
+	}
 	Integer productId;
 	String productName;
 	String productDescription;

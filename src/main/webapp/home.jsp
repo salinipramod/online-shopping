@@ -49,8 +49,8 @@ h4 {
 <label> <h2>ShopZone </h2></label></label>
 <div style="margin: 0 auto; width:370px;" >
 <img style="margin: 0 auto; width:21px;" src="logo.jpg" alt="Avatar" class="avatar">
-<button  onclick="window.location='Admin.jsp'" class="button button2"> Order Details</button>
-<button onclick="window.location='login.jsp'" class="button button2" >Logout</button>
+<button  onclick="window.location='orders.jsp'" class="button button2"> Order Details</button>
+<button onclick="window.location='index.jsp'" class="button button2" >Logout</button>
 </div>
 </div>
 <div class="center">

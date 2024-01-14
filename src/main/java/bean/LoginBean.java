@@ -1,6 +1,14 @@
 package bean;
 public class LoginBean {
-    String username;
+    public LoginBean(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+	public LoginBean() {
+		super();
+	}
+	String username;
     String password;
 
     public String getUsername() {

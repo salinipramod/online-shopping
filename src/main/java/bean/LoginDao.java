@@ -4,12 +4,12 @@ import java.sql.*;
 import bean.LoginBean;  
 public class LoginDao {  
   
-public static boolean validate(LoginBean bean){  
+public static boolean validate(LoginBean bean){ 
 	System.out.println("Entered into LoginDao.validate method..");
 boolean status=false;  
 Connection con = null;
 try{  
-con=ConnectionProvider.getCon();  
+con=getCon();  
               
 PreparedStatement ps=con.prepareStatement(  
     "select * from employee where emp_name=? and password=?");  
@@ -35,4 +35,16 @@ System.out.println("Exited LoginDao.validate method with status : "+status);
 return status;  
   
 }  
+private static Connection getCon(){ 
+	Connection con = null;
+	try{  
+		Class.forName("com.mysql.cj.jdbc.Driver");  
+		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT","root","salinipramod");  
+		
+		}catch(Exception e){ 
+			System.out.println(e);
+			}  
+	return con;
+		} 
+
 }  

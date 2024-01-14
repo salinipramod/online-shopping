@@ -8,19 +8,19 @@
 </head>
 <body>
 <h1> Register Form</h1>
-<form action ="index.jsp" method="post">
+<form action ="registerProcess.jsp" method="post">
 			<table style="with: 50%">
 				<tr>
 					<td>First Name</td>
-					<td><input type="text" name="first_name" /></td>
+					<td><input type="text" name=firstName /></td>
 				</tr>
 				<tr>
 					<td>Last Name</td>
-					<td><input type="text" name="last_name" /></td>
+					<td><input type="text" name="lastName" /></td>
 				</tr>
 				<tr>
 					<td>UserName</td>
-					<td><input type="text" name="username" /></td>
+					<td><input type="text" name="userName" /></td>
 				</tr>
 					<tr>
 					<td>Password</td>
@@ -32,7 +32,7 @@
 				</tr>
 				<tr>
 					<td>Contact No</td>
-					<td><input type="text" name="contact" /></td>
+					<td><input type="text" name="contactno" /></td>
 				</tr></table>
 			<input type="submit" value="Submit" /></form>
 </body>

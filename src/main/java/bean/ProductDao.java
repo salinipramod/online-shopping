@@ -8,7 +8,7 @@ public class ProductDao {
 	
 	public static  List<ProductBean> getProduct() {
 		Connection con = null;
-		con=ConnectionProvider.getCon();
+		con=getCon();
 		List<ProductBean> productList = new ArrayList<>();
 		try {
 			PreparedStatement ps=con.prepareStatement(  
@@ -32,6 +32,17 @@ public class ProductDao {
 		return productList;
 	}
 	
+	private static Connection getCon(){ 
+		Connection con = null;
+		try{  
+			Class.forName("com.mysql.cj.jdbc.Driver");  
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT","root","salinipramod");  
+			
+			}catch(Exception e){ 
+				System.out.println(e);
+				}  
+		return con;
+			} 
 
 	}
 
