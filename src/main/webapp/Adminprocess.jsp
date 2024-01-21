@@ -8,7 +8,7 @@ if(status){
 out.println("Your successfully logged in");  
 session.setAttribute("session","TRUE"); 
 %>  
-<jsp:include page="home.jsp"></jsp:include>  
+<jsp:include page="adminHome.jsp"></jsp:include>  
 <% 
 }  
 else  

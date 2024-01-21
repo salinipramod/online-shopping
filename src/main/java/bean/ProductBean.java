@@ -1,5 +1,7 @@
 package bean;
 
+import java.time.Instant;
+
 public class ProductBean {
 
 	public ProductBean() {
@@ -48,6 +50,10 @@ public class ProductBean {
 	}
 	public void setProductcategor(String productcategor) {
 		this.productCategory = productCategory;
+	}
+	public Instant getPurchaseDate() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

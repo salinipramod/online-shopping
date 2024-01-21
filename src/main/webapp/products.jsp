@@ -48,7 +48,7 @@ while(resultSet.next()){
 <td id ="pDes"><%=resultSet.getString(3) %></td>
 <td id ="pPrice"><%=resultSet.getString(4) %></td>
 <td id ="pCat"><%=resultSet.getString(5) %></td>
-<td  ><button class="btnSelect">Add to Cart</button></td>
+<td  ><button class="btnSelect">Add to cart </button></td>
 
 </tr>
 <%

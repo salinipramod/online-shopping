@@ -3,10 +3,12 @@
 <jsp:setProperty property="*" name="bean"/>  
   
 <%  
-boolean status=LoginDao.validate(bean);  
-if(status){  
+String status=LoginDao.validate(bean);  
+if(status!= null){  
 out.println("Your successfully logged in");  
 session.setAttribute("session","TRUE"); 
+session.setAttribute("username", status);
+
 %>  
 <jsp:include page="home.jsp"></jsp:include>  
 <% 

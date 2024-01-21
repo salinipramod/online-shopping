@@ -37,72 +37,87 @@
 .button1 {background-color: #04AA6D;} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */
 h2 {
-  text-align: left;
-}
-h4 {
-  text-align:left;
+  text-align: centre;
 }
 </style>
 </head>
 <body>
-<div class="center">
-<label> <h2>ShopZone </h2></label></label>
-<div style="margin: 0 auto; width:370px;" >
-<img style="margin: 0 auto; width:21px;" src="logo.jpg" alt="Avatar" class="avatar">
+<h1 align="center"><img style="margin: 0 auto; width:21px;" src="logo.jpg" alt="Avatar" class="avatar"></h1>
+
+<h1 align="center">Online Shopping Program</h1>
+<h2 align="center">ShopZone </h2>
+
+<div style="margin:10 auto; width:270px;" >
+
 <button  onclick="window.location='Admin.jsp'" class="button button2"> Admin</button>
 <button onclick="window.location='login.jsp'" class="button button2" >Login</button>
 <button onclick="window.location='register.jsp'" class="button button1" >Register</button>
 </div>
+<div style="margin: 5 auto; width:370px;" >
+<div class="left">
+<input  style ="width :550px" type="text" placeholder="Search items.." name="searchBar"  
+value="search" class="searchClass"  id="searchId"><br>
 </div>
-<div class="center">
-<input  style ="width :640px" type="text" placeholder="Search items.." name="searchBar"  
-value="search" class="searchClass"  id="searchId">
-</div>
-<table class="separated">
+<h1 align="center"><img style="margin: 0 auto; width:255px;" src="logo.jpg" alt="Avatar" class="avatar"></h1>
+<!--  table class="separated">
 <tr>
 <td>
-<img style="margin: 0 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
+<img style="margin: 10 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
 </td>
+<div style="margin: 0 auto; width:370px;" >
  <div class="center">
 <td>
-<p> this is book about something...</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Color TV stock...</p>
 </td>
 <td>
-<button> Add to cart</button>
+<button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add to cart</button>
 </td>
 </tr>
 <tr>
 <td>
-<img style="margin: 0 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
+<img style="margin: 10 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
 </td>
 <td> 
-<p> this is TV stock</p>
+<p>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Speaker stock</p>
 </td>
 <td>
-<button> Add to cart</button>
+<button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add to cart</button>
 </td> 
 <tr>
 <td>
-<img style="margin: 0 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
+<img style="margin: 10 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
 </td>
 <td> 
-<p> this is TV stock</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bed stock</p>
 </td>
 <td>
-<button> Add to cart</button>
+<button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add to cart</button>
 </td> 
 <tr>
 <td>
-<img style="margin: 0 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
+<img style="margin: 10 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
 </td>
 <td>
-<p> this is TV stock</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Mixer stock</p>
 </td>
 <td>
-<button> Add to cart</button>
+<button>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Add to cart</button>
 </div>
 </td> 
 </tr>
-</table>
+<tr>
+<td>
+<img style="margin: 10 auto; width:30px;" src="logo.jpg" alt="Avatar" class="avatar">
+</td>
+<td>
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Chair stock</p>
+</td>
+<td>
+<button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Add to cart</button>
+</div>
+</td> 
+</tr>
+</table>-->
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
