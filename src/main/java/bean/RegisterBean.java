@@ -42,7 +42,7 @@ public class RegisterBean {
 	public String getContactno() {
 		return contactno;
 	}
-	public void setcontactno() {
+	public void setcontactno(String contactno) {
 		this.contactno =  contactno;
 	}
 	

@@ -17,11 +17,11 @@ public class ProductDao {
 			ResultSet rs=ps.executeQuery(); 
 			while(rs.next()) {
 				ProductBean productBean =new ProductBean();
-				productBean.setProductid(rs.getInt(1));
-				productBean.setProductname(rs.getString(2));
-				productBean.setProductdescription(rs.getString(3));
-				productBean.setProductprice(rs.getString(4));
-				productBean.setProductcategor(rs.getString(5));
+				productBean.setProductId(rs.getInt(1));
+				productBean.setProductName(rs.getString(2));
+				productBean.setProductDescription(rs.getString(3));
+				productBean.setProductPrice(rs.getString(4));
+				productBean.setProductCategory(rs.getString(5));
 				productList.add(productBean);
 			}
 			
@@ -40,13 +40,12 @@ public class ProductDao {
 		boolean status =false;
 		try {
 			Connection conn = getCon();
-			PreparedStatement st;
-		PreparedStatement stmt=conn.prepareStatement("insert into Product values(?,?,?,?,?,?)"); 
-		 stmt.setInt(1,bean.getProductid ())	;
-		    stmt.setString(2, bean.getProductname());
-			stmt.setString(3, bean.getProductdescription());
-			stmt.setString(4, bean.getProductprice());
-			stmt.setString(5, bean.getProductcategor());
+		PreparedStatement stmt=conn.prepareStatement("insert into Product values(?,?,?,?,?)"); 
+		 stmt.setInt(1,getPurchaseId())	;
+		    stmt.setString(2, bean.getProductName());
+			stmt.setString(3, bean.getProductDescription());
+			stmt.setString(4, bean.getProductPrice());
+			stmt.setString(5, bean.getProductCategory());
 			System.out.println("Entered into addProductDao.addproduct statement:"+stmt);
 			int i=stmt.executeUpdate(); 
 			System.out.println("Entered into addProductDao.addproduc status:"+i);
@@ -59,17 +58,13 @@ public class ProductDao {
 		 }
 		return status;
 	}
-	private static int getProductid() {
-		Random r = new Random();
-		Integer pId = r.nextInt(100000);
-		return pId;
-	}
 			
 	
 
 	private static int getPurchaseId() {
-		// TODO Auto-generated method stub
-		return 0;
+		Random r = new Random();
+		Integer pId = r.nextInt(100000);
+		return pId;
 	}
 
 	private static Connection getCon(){ 

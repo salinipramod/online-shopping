@@ -1,61 +1,42 @@
 package bean;
 
-import java.time.Instant;
-
 public class ProductBean {
 
-	public ProductBean() {
-		super();
-	}
-	public ProductBean(Integer productId, String productName, String productDescription, String productPrice,
-			String productCategory) {
-		super();
-		this.productId = productId;
-		this.productName = productName;
-		this.productDescription = productDescription;
-		this.productPrice = productPrice;
-		this.productCategory = productCategory;
-	}
 	Integer productId;
 	String productName;
 	String productDescription;
 	String productPrice;
 	String productCategory;
-	public Integer getProductid() {
+	
+	public Integer getProductId() {
 		return productId;
 	}
-	public void setProductid(Integer productid) {
-		this.productId = productid;
+	public void setProductId(Integer productId) {
+		this.productId = productId;
 	}
-	public String getProductname() {
+	public String getProductName() {
 		return productName;
 	}
-	public void setProductname(String productname) {
-		this.productName = productname;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
-	public String getProductdescription() {
+	public String getProductDescription() {
 		return productDescription;
 	}
-	public void setProductdescription(String productdescription) {
-		this.productDescription = productdescription;
+	public void setProductDescription(String productDescription) {
+		this.productDescription = productDescription;
 	}
-	public String getProductprice() {
+	public String getProductPrice() {
 		return productPrice;
 	}
-	public void setProductprice(String productprice) {
-		this.productPrice = productprice;
+	public void setProductPrice(String productPrice) {
+		this.productPrice = productPrice;
 	}
-	public String getProductcategor() {
+	public String getProductCategory() {
 		return productCategory;
 	}
-	public void setProductcategor(String productcategor) {
+	public void setProductCategory(String productCategory) {
 		this.productCategory = productCategory;
 	}
-	public Instant getPurchaseDate() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	
 	
 }

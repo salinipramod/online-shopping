@@ -1,7 +1,5 @@
 package bean;  
-import java.sql.*;
-
-import bean.LoginBean;  
+import java.sql.*; 
 public class LoginDao {  
   
 public static String validate(LoginBean bean){ 

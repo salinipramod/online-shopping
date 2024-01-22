@@ -1,10 +1,11 @@
 <%@page import="bean.ProductDao"%>  
-<jsp:useBean id="obj" class="bean.ProductBean"/> 
-<jsp:setProperty property="*" name="obj"/>  
+<jsp:useBean id="u" class="bean.ProductBean"></jsp:useBean>    
+<jsp:setProperty property="*" name="u"/>
+
   <%  
-boolean status=ProductDao.addProduct(obj);
+boolean status=ProductDao.addProduct(u);
 if(status){  
-out.println("User order Successfully");  
+out.println("Product added Successfully");  
 session.setAttribute("session","TRUE"); 
 %>  
 <jsp:include page="home.jsp"></jsp:include>  

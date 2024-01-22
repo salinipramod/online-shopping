@@ -12,7 +12,6 @@ public class RegistrationDao{
 		boolean status =false;
 		try {
 			Connection conn = getCon();
-			PreparedStatement st;
 			PreparedStatement stmt=conn.prepareStatement("insert into employee values(?,?,?,?,?,?)");  
 			stmt.setString(1, bean.getUserName());//1 specifies the first parameter in the query  
 			stmt.setString(2, bean.getPassword());
